@@ -22,7 +22,7 @@ const AddEvent = () => {
       attendeeCount: 0,
     };
 
-    axios.post("https://event-sphere-server-pfuogib7i-noorjahan-akters-projects.vercel.app/addEvent", newEvent)
+    axios.post("https://event-sphere-server-9srdzaeyd-noorjahan-akters-projects.vercel.app/addEvent", newEvent)
       .then(res => {
         if (res.status === 201) {
           alert("Event added successfully!");
