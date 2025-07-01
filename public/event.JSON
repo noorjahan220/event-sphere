@@ -1,0 +1,82 @@
+[
+  {
+    "eventTitle": "Tech Innovations 2025",
+    "postedBy": "Noorjahan Akter",
+    "dateTime": "2025-07-15T10:00",
+    "location": "Dhaka IT Park",
+    "description": "A seminar on the latest technological innovations shaping the future.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "Literature Meet-Up",
+    "postedBy": "Meem Rahman",
+    "dateTime": "2025-08-01T16:00",
+    "location": "Jashore Library Auditorium",
+    "description": "Discussing modern literature and emerging authors.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "Women in Tech Bangladesh",
+    "postedBy": "Afsana Haque",
+    "dateTime": "2025-09-10T09:30",
+    "location": "Sylhet Startup Hub",
+    "description": "Empowering women through workshops and networking in the tech industry.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "Frontend Hackathon",
+    "postedBy": "Raihan Kabir",
+    "dateTime": "2025-07-20T11:00",
+    "location": "Chattogram CodeBase",
+    "description": "Compete to build interactive frontend apps in just 12 hours.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "Startup Pitch Day",
+    "postedBy": "Sadia Jahan",
+    "dateTime": "2025-07-25T13:00",
+    "location": "North South University",
+    "description": "Startup founders pitch their ideas to investors and mentors.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "React.js Workshop",
+    "postedBy": "Fahim Hossain",
+    "dateTime": "2025-08-12T14:00",
+    "location": "Khulna Tech Center",
+    "description": "Hands-on learning of React.js and building your first web app.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "AI for Everyone",
+    "postedBy": "Noorjahan Akter",
+    "dateTime": "2025-07-30T17:00",
+    "location": "Online (Zoom)",
+    "description": "An introduction to AI for beginners with live Q&A.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "Career Fair 2025",
+    "postedBy": "Mahmudul Islam",
+    "dateTime": "2025-10-05T10:00",
+    "location": "Dhaka Convention Center",
+    "description": "Meet top companies, submit resumes, and attend interviews on spot.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "MERN Stack Bootcamp",
+    "postedBy": "Hasan Uddin",
+    "dateTime": "2025-08-18T09:00",
+    "location": "Rajshahi Dev Center",
+    "description": "Intensive training on MongoDB, Express, React, and Node.js.",
+    "attendeeCount": 0
+  },
+  {
+    "eventTitle": "Design Thinking for Devs",
+    "postedBy": "Tania Sultana",
+    "dateTime": "2025-09-02T15:30",
+    "location": "Barishal Creative Hub",
+    "description": "Learn to design better user experiences and interfaces.",
+    "attendeeCount": 0
+  }
+]
