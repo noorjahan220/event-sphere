@@ -22,7 +22,7 @@ const AddEvent = () => {
       attendeeCount: 0,
     };
 
-    axios.post("https://event-sphere-server.onrender.com/addEvent", newEvent)
+    axios.post("http://localhost:5000/addEvent", newEvent)
       .then(res => {
         if (res.status === 201) {
           alert("Event added successfully!");

@@ -1,14 +1,14 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom"; // ✅ added
+import { Link, useNavigate } from "react-router-dom"; 
 import { AuthContext } from './../../Provider/AuthProvider';
 
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
-  const navigate = useNavigate(); // ✅ hook for navigation
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
     logout();
-    navigate("/"); // ✅ redirect to home after logout
+    navigate("/"); 
   };
 
   const links = (
