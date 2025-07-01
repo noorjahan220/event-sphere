@@ -9,7 +9,7 @@ const Events = () => {
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
-    axios.get("http://localhost:5000/allEvent")
+    axios.get("https://event-sphere-server-pfuogib7i-noorjahan-akters-projects.vercel.app/allEvent")
       .then(res => {
         const sorted = res.data.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
         setEvents(sorted);

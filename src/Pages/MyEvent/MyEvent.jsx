@@ -17,7 +17,7 @@ const MyEvent = () => {
       setLoading(true);
       setError(null);
       try {
-        const res = await axios.get(`http://localhost:5000/event/${user.email}`);
+        const res = await axios.get(`https://event-sphere-server-9srdzaeyd-noorjahan-akters-projects.vercel.app/event/${user.email}`);
         const sorted = res.data.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
         setMyEvents(sorted);
       } catch (err) {
