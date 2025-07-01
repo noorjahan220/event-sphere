@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import axios from 'axios';
+import { AuthContext } from '../../Provider/AuthProvider';
+
 
 const AddEvent = () => {
+  const { user } = useContext(AuthContext); // 🔁 get the logged-in user
+
   const handleAddEvent = (e) => {
     e.preventDefault();
     const form = e.target;
     const eventTitle = form.eventTitle.value;
-    const postedBy = form.postedBy.value;
     const dateTime = form.dateTime.value;
     const location = form.location.value;
     const description = form.description.value;
 
     const newEvent = {
       eventTitle,
-      postedBy,
+      postedBy: user?.email, // ✅ automatically add logged-in user's email
       dateTime,
       location,
       description,
@@ -38,7 +41,6 @@ const AddEvent = () => {
       <h2 className="text-3xl font-bold text-center mb-6">Add New Event</h2>
       <form onSubmit={handleAddEvent} className="max-w-xl mx-auto bg-base-100 p-6 rounded shadow space-y-4">
         <input name="eventTitle" className="input input-bordered w-full" placeholder="Event Title" required />
-        <input name="postedBy" className="input input-bordered w-full" placeholder="Your Name" required />
         <input name="dateTime" type="datetime-local" className="input input-bordered w-full" required />
         <input name="location" className="input input-bordered w-full" placeholder="Location" required />
         <textarea name="description" className="textarea textarea-bordered w-full" placeholder="Event Description" required></textarea>
