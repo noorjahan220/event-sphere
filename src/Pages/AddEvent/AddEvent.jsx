@@ -4,8 +4,7 @@ import { AuthContext } from '../../Provider/AuthProvider';
 
 
 const AddEvent = () => {
-  const { user } = useContext(AuthContext); // 🔁 get the logged-in user
-
+  const { user } = useContext(AuthContext); 
   const handleAddEvent = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -16,7 +15,7 @@ const AddEvent = () => {
 
     const newEvent = {
       eventTitle,
-      postedBy: user?.email, // ✅ automatically add logged-in user's email
+      postedBy: user?.email, 
       dateTime,
       location,
       description,

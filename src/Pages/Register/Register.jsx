@@ -5,8 +5,8 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 
 const Register = () => {
-  const { login } = useContext(AuthContext); // Get login() function
-  const navigate = useNavigate(); // For redirection
+  const { login } = useContext(AuthContext); 
+  const navigate = useNavigate(); 
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -27,8 +27,8 @@ const Register = () => {
       if (response.status === 201) {
         alert("Registration successful!");
         form.reset();
-        login(response.data.user); // Save user in context
-        navigate("/"); // Redirect to homepage
+        login(response.data.user); 
+        navigate("/"); 
       }
     } catch (error) {
       alert(error.response?.data?.message || "Registration failed!");

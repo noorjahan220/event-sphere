@@ -22,9 +22,9 @@ const Login = () => {
       });
 
       alert(response.data.message);
-      login(response.data.user); // set user in context
+      login(response.data.user);
       form.reset();
-      navigate("/"); // redirect to home page
+      navigate("/"); 
     } catch (error) {
       alert(error.response?.data?.message || "Login failed");
     }

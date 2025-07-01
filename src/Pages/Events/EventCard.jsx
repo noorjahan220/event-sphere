@@ -10,7 +10,7 @@ const EventCard = ({ event, onJoin }) => {
     axios.post(`http://localhost:5000/joinEvent/${_id}`, { userEmail: user?.email })
       .then(() => {
         alert("You joined the event!");
-        onJoin(); // Refetch events
+        onJoin(); 
       })
       .catch((err) => {
         alert(err.response?.data?.message || "Failed to join");
