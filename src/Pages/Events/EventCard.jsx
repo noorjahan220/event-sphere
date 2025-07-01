@@ -7,7 +7,7 @@ const EventCard = ({ event, onJoin }) => {
   const { _id, eventTitle, postedBy, dateTime, location, description, attendeeCount } = event;
 
   const handleJoin = () => {
-    axios.post(`http://localhost:5000/joinEvent/${_id}`, { userEmail: user?.email })
+    axios.post(`https://event-sphere-server.onrender.com/joinEvent/${_id}`, { userEmail: user?.email })
       .then(() => {
         alert("You joined the event!");
         onJoin(); 

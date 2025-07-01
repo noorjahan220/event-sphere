@@ -17,7 +17,7 @@ const Register = () => {
     const password = form.password.value;
 
     try {
-      const response = await axios.post("http://localhost:5000/register", {
+      const response = await axios.post("https://event-sphere-server.onrender.com/register", {
         name,
         email,
         password,

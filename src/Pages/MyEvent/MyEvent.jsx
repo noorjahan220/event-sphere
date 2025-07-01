@@ -17,7 +17,7 @@ const MyEvent = () => {
       setLoading(true);
       setError(null);
       try {
-        const res = await axios.get(`http://localhost:5000/event/${user.email}`);
+        const res = await axios.get(`https://event-sphere-server.onrender.com/event/${user.email}`);
         const sorted = res.data.sort((a, b) => new Date(b.dateTime) - new Date(a.dateTime));
         setMyEvents(sorted);
       } catch (err) {
@@ -34,7 +34,7 @@ const MyEvent = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this event?')) {
       try {
-        await axios.delete(`http://localhost:5000/event/${id}`);
+        await axios.delete(`https://event-sphere-server.onrender.com/event/${id}`);
         setMyEvents(prev => prev.filter(event => event._id !== id));
       } catch (err) {
         console.error(err);
@@ -58,7 +58,7 @@ const MyEvent = () => {
     if (!editingEvent) return;
 
     try {
-      await axios.put(`http://localhost:5000/event/${editingEvent._id}`, formData);
+      await axios.put(`https://event-sphere-server.onrender.com/event/${editingEvent._id}`, formData);
       setMyEvents(prev =>
         prev.map(event => 
           event._id === editingEvent._id ? { ...event, ...formData } : event

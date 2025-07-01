@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 
@@ -16,7 +16,7 @@ const Login = () => {
     const password = form.password.value;
 
     try {
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post("https://event-sphere-server.onrender.com/login", {
         email,
         password,
       });
@@ -60,6 +60,9 @@ const Login = () => {
               <button className="btn btn-neutral w-full mt-4" type="submit">
                 Login
               </button>
+              <Link to="/register" className="text-center block mt-4">
+                  Create an account!
+                </Link>
             </form>
           </div>
         </div>
